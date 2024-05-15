@@ -96,7 +96,7 @@ Selection Bias: E[Y(0)|T=1] - E[Y(0)|T=0] = {selection_bias:.5f}
 """
 )
 ```
-```bash
+```
                       E[Y|T=1] - E[Y|T=0] = 0.00176
                      ATT + selection_bias = 0.00176 
 
