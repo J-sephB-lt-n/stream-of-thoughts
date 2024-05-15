@@ -28,6 +28,7 @@ import random
 import statistics
 
 N_INDIVIDUALS: int = 100_000
+random.seed(69)
 
 untreated_prob_of_dying: list[float] = [
     random.uniform(0, 1) for _ in range(N_INDIVIDUALS)
@@ -94,6 +95,13 @@ print(
 Selection Bias: E[Y(0)|T=1] - E[Y(0)|T=0] = {selection_bias:.5f}
 """
 )
+```
+```bash
+                      E[Y|T=1] - E[Y|T=0] = 0.00176
+                     ATT + selection_bias = 0.00176 
+
+                    ATT: E[Y(1)-Y(0)|T=1] = -0.33341
+Selection Bias: E[Y(0)|T=1] - E[Y(0)|T=0] = 0.33516
 ```
 
 
