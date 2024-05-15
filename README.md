@@ -22,6 +22,27 @@ Y_i(1) &=& \text{outcome which would have been observed for individual } i \text
 Y_i(0) &=& \text{outcome which would have been observed for individual } i \text{ if they had NOT received the treatment} \\
 \end{array}$$
 
+xx
+
+$$\begin{array}{lcl}
+\underbrace{E\Big[Y\Bigl|T=1\Big] - E\Big[Y\Bigl|T=0\Big]}_{\substack{\text{Difference between} \\ \text{treatment group means} } } &=& \underbrace{E\Big[Y(1)-Y(0)\Bigl|T=1\Big]}_{
+    \substack{\text{Average Treatment effect} \\ \text{on the Treated (ATT)} }} + 
+    \underbrace{\Bigg(E\Big[Y(0)\Bigl|T=1\Big]-E\Big[Y(0)\Bigl|T=0\Big]\Bigg)}_{\text{Selection Bias}} \\
+Y_i &=& \text{outcome of interest (on individual } i)\\
+T_i &=& \begin{cases}1 \quad \text{if individual } i \text{ received treatment}\\0\quad\text{if individual } i \text{ did not receive treatment}\end{cases} \\
+Y_i(1) &=& \text{outcome which would have been observed for individual } i \text{ if they had received the treatment} \\
+Y_i(0) &=& \text{outcome which would have been observed for individual } i \text{ if they had NOT received the treatment} \\
+\end{array}$$
+
+xx
+
+$$\begin{array}{lcl}
+Y_i &=& \text{outcome of interest (on individual } i)\\
+T_i &=& \begin{cases}1 \quad \text{if individual } i \text{ received treatment}\\0\quad\text{if individual } i \text{ did not receive treatment}\end{cases} \\
+Y_i(1) &=& \text{outcome which would have been observed for individual } i \text{ if they had received the treatment} \\
+Y_i(0) &=& \text{outcome which would have been observed for individual } i \text{ if they had NOT received the treatment} \\
+\end{array}$$
+
 Here is a simulation in python showing this to be true:
 ```python
 import random
