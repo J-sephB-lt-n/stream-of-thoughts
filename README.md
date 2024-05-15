@@ -38,6 +38,16 @@ xx
 
 ```math
 $$\begin{array}{lcl}
+\underbrace{E\Big[Y\Bigl|T=1\Big] - E\Big[Y\Bigl|T=0\Big]}_{
+    \substack{ \text{Difference between} \\ \text{treatment group means} } 
+    }
+    &=& 
+    \underbrace{E\Big[Y(1)-Y(0)\Bigl|T=1\Big]}_{
+    \substack{\text{Average Treatment effect} \\ \text{on the Treated (ATT)} }} + 
+    \underbrace{\Bigg(E\Big[Y(0)\Bigl|T=1\Big]-E\Big[Y(0)\Bigl|T=0\Big]\Bigg)}_{
+        \text{Selection Bias}
+        } \\
+\space &\space& \space \\
 Y_i &=& \text{outcome of interest (on individual } i)\\
 T_i &=& \begin{cases}1 \quad \text{if individual } i \text{ received treatment} \\
 0 \quad \text{if individual } i \text{ did not receive treatment}\end{cases} \\
