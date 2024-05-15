@@ -5,8 +5,7 @@ An unordered record of things which I want to be documented
 
 ## Association, Bias & Causation
 
-$$
-\begin{array}{lcl}
+$$\begin{array}{lcl}
 \underbrace{E\Big[Y\Bigl|T=1\Big] - E\Big[Y\Bigl|T=0\Big]}_{
     \substack{ \text{Difference between} \\ \text{treatment group means} } 
     }
