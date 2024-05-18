@@ -1,7 +1,7 @@
 # stream-of-thoughts
 An unordered record of things which I want to be documented
 
-[Association, Bias & Causation](#association-bias--causation)
+[Association, Bias & Causation](#association-bias--causation), [Database Normalisation](#database-normalisation)
 
 ## Association, Bias & Causation
 
@@ -107,5 +107,30 @@ Selection Bias: E[Y(0)|T=1] - E[Y(0)|T=0] = {selection_bias:.5f}
 Selection Bias: E[Y(0)|T=1] - E[Y(0)|T=0] = 0.33516
 ```
 
+## Database Normalisation
 
+### 1st Normal Form
 
+To be in first normal form, table cells can only contain a single value.
+
+Example: Not in first normal form:
+
+| Name     | Skills
+|----------|-----------
+| Joe      | python,unicyling,piano 
+| Napoleon | nunchuck,bow hunting,computer hacking
+
+Example: In first normal form:
+
+| Name | Skill
+|------|--------------
+| Joe  | python
+| Joe  | unicyling
+| Joe  | piano 
+| Napoleon | nunchuck
+| Napoleon | bow hunting
+| Napoleon | computer hacking
+
+### Database Normalisation: 2nd Normal Form
+
+### Database Normalisation: 3rd Normal Form
