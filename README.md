@@ -1,7 +1,7 @@
 # stream-of-thoughts
 An unordered record of things which I want to be documented
 
-[Association, Bias & Causation](#association-bias--causation), [Database Normalisation](#database-normalisation)
+[Association, Bias & Causation](#association-bias--causation), [Database Normalisation](#database-normalisation), [Kelly Criterion](#the-kelly-criterion)
 
 ## Association, Bias & Causation
 
@@ -109,9 +109,11 @@ Selection Bias: E[Y(0)|T=1] - E[Y(0)|T=0] = 0.33516
 
 ## Database Normalisation
 
+```<this section is still under construction>```
+
 ### 1st Normal Form
 
-To be in first normal form, table cells can only contain a single value.
+To be in first normal form, each table cell must contain a single value (e.g. not anything like an array, json or nested table within the cell).
 
 Example: Not in first normal form:
 
@@ -133,4 +135,13 @@ Example: In first normal form:
 
 ### Database Normalisation: 2nd Normal Form
 
+
+
 ### Database Normalisation: 3rd Normal Form
+
+
+## The Kelly Criterion 
+
+```<this section is still under construction>```
+
+The [Kelly Criterion](https://en.wikipedia.org/wiki/Kelly_criterion) (or [Kelly Strategy](https://en.wikipedia.org/wiki/Kelly_criterion)) is a result from probability theory. In a specific repeated game (which is somewhat relevant to gambling and investing), it is the strategy achieving maximum gain/reward in the long run. 
